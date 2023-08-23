@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing-page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/lht4ked.css">
+  <link rel="stylesheet" href="slideshow.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="js.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="main-container">
+    <header>
+      <div class="head-menu">
+        <ul>
+          <li id="bars">
+            <a href="#">
+              <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M38 0H2C0.895431 0 0 0.895431 0 2V3.6095C0 4.71407 0.895431 5.6095 2 5.6095H38C39.1046 5.6095 40 4.71407 40 3.6095V2C40 0.89543 39.1046 0 38 0Z"
+                  fill="#2A5C6B" />
+                <path
+                  d="M38 13.8835H2C0.895431 13.8835 0 14.779 0 15.8835V17.493C0 18.5976 0.895431 19.493 2 19.493H38C39.1046 19.493 40 18.5976 40 17.493V15.8835C40 14.779 39.1046 13.8835 38 13.8835Z"
+                  fill="#2A5C6B" />
+                <path
+                  d="M38 27.7671H2C0.895431 27.7671 0 28.6625 0 29.7671V31.3766C0 32.4812 0.895431 33.3766 2 33.3766H38C39.1046 33.3766 40 32.4812 40 31.3766V29.7671C40 28.6625 39.1046 27.7671 38 27.7671Z"
+                  fill="#2A5C6B" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="container main-menu">
+          <div class="head-logo">
+            <svg width="63" height="61" viewBox="0 0 63 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.1702 22.6746C32.0388 23.8064 30.2085 23.8111 29.0826 22.6848C27.9567 21.5584 27.9614 19.7274 29.0928 18.5956C30.2246 17.4638 32.0545 17.459 33.1807 18.5854C34.307 19.7117 34.3019 21.542 33.1702 22.6746Z"
+                fill="#FFCF52" />
+              <path
+                d="M33.1702 22.6746C32.0388 23.8064 30.2085 23.8111 29.0826 22.6848C27.9567 21.5584 27.9614 19.7274 29.0928 18.5956C30.2246 17.4638 32.0545 17.459 33.1807 18.5854C34.307 19.7117 34.3019 21.542 33.1702 22.6746Z"
+                fill="#FFCF52" />
+              <path
+                d="M24.727 11.8163C23.6773 10.7482 23.8375 9.01518 25.166 8.32406C26.8765 7.4342 29.2802 6.45496 31.6789 6.38C36.142 6.24053 38.0079 7.91422 39.3326 7.07737C40.6572 6.24053 40.6586 2.62784 41.6026 1.47179C41.7712 1.2653 41.9896 1.08561 42.2347 0.929755C43.6281 0.0435056 45.2193 1.31932 45.3862 2.9623C45.8134 7.16826 46.4215 14.9367 45.7483 20.1382C45.2228 24.1983 44.0367 26.5757 43.0672 27.8979C42.3319 28.9007 40.9858 28.79 40.0788 27.9394V27.9394C38.9362 26.8678 38.9286 25.0814 39.5662 23.6507C40.0444 22.5776 40.3102 21.3888 40.3102 20.1382C40.3102 15.3692 36.446 11.5034 31.6789 11.5034C30.4298 11.5034 29.2427 11.7688 28.171 12.2462C27.0202 12.7588 25.61 12.7148 24.727 11.8163V11.8163Z"
+                fill="#2A5C6B" />
+              <path
+                d="M37.7799 29.3717C38.8295 30.4397 38.6693 32.1728 37.3409 32.8639C35.6304 33.7538 33.2266 34.733 30.828 34.808C26.3648 34.9475 24.499 33.2738 23.1743 34.1106C21.8496 34.9475 21.8483 38.5602 20.9043 39.7162C20.7357 39.9227 20.5172 40.1024 20.2722 40.2582C18.8787 41.1445 17.2875 39.8687 17.1206 38.2257C16.6935 34.0197 16.0853 26.2513 16.7585 21.0498C17.284 16.9897 18.4701 14.6123 19.4396 13.2901C20.1749 12.2873 21.521 12.398 22.4281 13.2486V13.2486C23.5706 14.3202 23.5783 16.1066 22.9407 17.5373C22.4625 18.6104 22.1966 19.7992 22.1966 21.0498C22.1966 25.8188 26.0608 29.6846 30.828 29.6846C32.077 29.6846 33.2641 29.4192 34.3359 28.9418C35.4867 28.4292 36.8968 28.4732 37.7799 29.3717V29.3717Z"
+                fill="#2A5C6B" />
+              <path
+                d="M33.1702 22.6746C32.0388 23.8064 30.2085 23.8111 29.0826 22.6848C27.9567 21.5584 27.9614 19.7274 29.0928 18.5956C30.2246 17.4638 32.0545 17.459 33.1807 18.5854C34.307 19.7117 34.3019 21.542 33.1702 22.6746Z"
+                fill="#FFCF52" />
+              <path
+                d="M0 60.1776V52.4009H3.2956C3.65326 52.4009 3.98355 52.4757 4.28647 52.6254C4.58939 52.7751 4.85034 52.9723 5.06931 53.2169C5.28829 53.4615 5.45982 53.739 5.58391 54.0493C5.708 54.3597 5.77004 54.6718 5.77004 54.9858C5.77004 55.2998 5.71165 55.6339 5.59486 55.9442C5.47807 56.2546 5.31384 56.5302 5.10216 56.7712C4.89048 57.0122 4.63501 57.2057 4.33574 57.3517C4.03647 57.4978 3.70801 57.5708 3.35035 57.5708H1.51094V60.1776H0ZM1.51094 56.2454H3.26275C3.54013 56.2454 3.77188 56.1323 3.95801 55.9059C4.14414 55.6795 4.2372 55.3728 4.2372 54.9858C4.2372 54.7887 4.208 54.6116 4.14961 54.4546C4.09122 54.2976 4.01458 54.1643 3.91969 54.0548C3.8248 53.9453 3.71348 53.8631 3.58575 53.8084C3.45801 53.7536 3.32845 53.7262 3.19706 53.7262H1.51094V56.2454Z"
+                fill="#2A5C6B" />
+              <path
+                d="M8.46289 60.1776V52.4009H11.9008C12.2585 52.4009 12.5888 52.4757 12.8917 52.6254C13.1946 52.7751 13.4556 52.9723 13.6745 53.2169C13.8935 53.4615 14.065 53.739 14.1891 54.0493C14.3132 54.3597 14.3753 54.6718 14.3753 54.9858C14.3753 55.4897 14.2494 55.9479 13.9975 56.3605C13.7457 56.773 13.4045 57.0706 12.9738 57.2531L14.7475 60.1776H13.0505L11.4629 57.5708H9.97383V60.1776H8.46289ZM9.97383 56.2454H11.868C12.0067 56.2454 12.1362 56.2126 12.2567 56.1469C12.3771 56.0811 12.4811 55.9917 12.5687 55.8785C12.6563 55.7653 12.7256 55.6321 12.7767 55.4787C12.8278 55.3254 12.8534 55.1611 12.8534 54.9858C12.8534 54.8106 12.8242 54.6353 12.7658 54.482C12.7074 54.3286 12.6289 54.1954 12.5304 54.0822C12.4318 53.969 12.3187 53.8814 12.191 53.8193C12.0632 53.7572 11.9337 53.7262 11.8023 53.7262H9.97383V56.2454Z"
+                fill="#2A5C6B" />
+              <path d="M17.3867 60.1776V52.4009H18.8977V60.1776H17.3867Z" fill="#2A5C6B" />
+              <path
+                d="M26.7915 54.4382C26.7404 54.3871 26.6474 54.3178 26.5123 54.2301C26.3773 54.1425 26.2131 54.0567 26.0196 53.9727C25.8262 53.8888 25.6163 53.8176 25.3901 53.7592C25.1638 53.7007 24.9339 53.6715 24.7003 53.6715C24.2842 53.6715 23.974 53.7482 23.7696 53.9015C23.5653 54.0549 23.4631 54.2703 23.4631 54.5478C23.4631 54.7084 23.5014 54.8417 23.578 54.9476C23.6547 55.0534 23.766 55.1466 23.912 55.2269C24.058 55.3072 24.2423 55.3802 24.4649 55.4459C24.6875 55.5117 24.9448 55.581 25.2368 55.654C25.6163 55.7563 25.9612 55.8658 26.2715 55.9826C26.5817 56.0995 26.8444 56.2455 27.0598 56.4208C27.2751 56.596 27.4412 56.806 27.5579 57.0506C27.6747 57.2952 27.7331 57.5964 27.7331 57.9542C27.7331 58.3704 27.6547 58.7264 27.4977 59.0221C27.3408 59.3179 27.1291 59.557 26.8627 59.7396C26.5963 59.9221 26.2897 60.0554 25.943 60.1394C25.5963 60.2233 25.2331 60.2653 24.8536 60.2653C24.2696 60.2653 23.693 60.1777 23.1237 60.0025C22.5543 59.8272 22.0434 59.5789 21.5908 59.2576L22.2587 57.9542C22.3244 58.0199 22.443 58.1057 22.6145 58.2116C22.7861 58.3175 22.9886 58.4234 23.2222 58.5293C23.4558 58.6351 23.7149 58.7246 23.9996 58.7976C24.2842 58.8706 24.5762 58.9071 24.8755 58.9071C25.7076 58.9071 26.1236 58.6406 26.1236 58.1076C26.1236 57.9396 26.0762 57.7972 25.9813 57.6804C25.8864 57.5635 25.7514 57.4613 25.5762 57.3737C25.401 57.2861 25.1893 57.2057 24.9412 57.1327C24.693 57.0597 24.4156 56.9794 24.1091 56.8918C23.7368 56.7895 23.4138 56.6782 23.1401 56.5577C22.8664 56.4372 22.6383 56.2948 22.4558 56.1305C22.2733 55.9662 22.1364 55.7764 22.0452 55.5609C21.954 55.3455 21.9083 55.0881 21.9083 54.7887C21.9083 54.3944 21.9813 54.0439 22.1273 53.7372C22.2733 53.4306 22.4759 53.175 22.735 52.9705C22.9941 52.7661 23.2952 52.6109 23.6383 52.505C23.9813 52.3991 24.3499 52.3462 24.7441 52.3462C25.2915 52.3462 25.7952 52.432 26.255 52.6036C26.7149 52.7752 27.1163 52.9778 27.4594 53.2115L26.7915 54.4382Z"
+                fill="#2A5C6B" />
+              <path
+                d="M35.9114 58.8523V60.1776H30.5137V52.4009H35.8129V53.7262H32.0246V55.5992H35.2983V56.826H32.0246V58.8523H35.9114Z"
+                fill="#2A5C6B" />
+              <path
+                d="M40.2473 55.1939V60.1776H38.7363V52.4009H39.9079L43.9589 57.5051V52.4118H45.4699V60.1776H44.2436L40.2473 55.1939Z"
+                fill="#2A5C6B" />
+              <path
+                d="M53.3638 54.4382C53.3127 54.3871 53.2196 54.3178 53.0846 54.2301C52.9496 54.1425 52.7853 54.0567 52.5919 53.9727C52.3985 53.8888 52.1886 53.8176 51.9623 53.7592C51.7361 53.7007 51.5061 53.6715 51.2726 53.6715C50.8565 53.6715 50.5463 53.7482 50.3419 53.9015C50.1375 54.0549 50.0353 54.2703 50.0353 54.5478C50.0353 54.7084 50.0737 54.8417 50.1503 54.9476C50.2269 55.0534 50.3383 55.1466 50.4842 55.2269C50.6302 55.3072 50.8145 55.3802 51.0372 55.4459C51.2598 55.5117 51.5171 55.581 51.809 55.654C52.1886 55.7563 52.5335 55.8658 52.8437 55.9826C53.1539 56.0995 53.4167 56.2455 53.632 56.4208C53.8474 56.596 54.0134 56.806 54.1302 57.0506C54.247 57.2952 54.3054 57.5964 54.3054 57.9542C54.3054 58.3704 54.2269 58.7264 54.07 59.0221C53.9131 59.3179 53.7014 59.557 53.435 59.7396C53.1685 59.9221 52.862 60.0554 52.5153 60.1394C52.1685 60.2233 51.8054 60.2653 51.4258 60.2653C50.8419 60.2653 50.2653 60.1777 49.6959 60.0025C49.1266 59.8272 48.6156 59.5789 48.1631 59.2576L48.831 57.9542C48.8967 58.0199 49.0153 58.1057 49.1868 58.2116C49.3583 58.3175 49.5609 58.4234 49.7945 58.5293C50.028 58.6351 50.2872 58.7246 50.5718 58.7976C50.8565 58.8706 51.1485 58.9071 51.4477 58.9071C52.2799 58.9071 52.6959 58.6406 52.6959 58.1076C52.6959 57.9396 52.6485 57.7972 52.5536 57.6804C52.4587 57.5635 52.3236 57.4613 52.1485 57.3737C51.9733 57.2861 51.7616 57.2057 51.5134 57.1327C51.2653 57.0597 50.9879 56.9794 50.6813 56.8918C50.3091 56.7895 49.9861 56.6782 49.7123 56.5577C49.4386 56.4372 49.2105 56.2948 49.028 56.1305C48.8456 55.9662 48.7087 55.7764 48.6175 55.5609C48.5262 55.3455 48.4806 55.0881 48.4806 54.7887C48.4806 54.3944 48.5536 54.0439 48.6996 53.7372C48.8456 53.4306 49.0481 53.175 49.3072 52.9705C49.5664 52.7661 49.8675 52.6109 50.2105 52.505C50.5536 52.3991 50.9222 52.3462 51.3163 52.3462C51.8638 52.3462 52.3674 52.432 52.8273 52.6036C53.2871 52.7752 53.6886 52.9778 54.0317 53.2115L53.3638 54.4382Z"
+                fill="#2A5C6B" />
+              <path
+                d="M62.4857 58.8523V60.1776H57.0879V52.4009H62.3871V53.7262H58.5988V55.5992H61.8725V56.826H58.5988V58.8523H62.4857Z"
+                fill="#2A5C6B" />
+            </svg>
+          </div>
+          <div id="toggleDiv" class="hidden-menu">
+            <div class="menu-content">
+              <nav>
+                <button id="close-menu">
+                  <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L32.1719 32M32.1719 2L2 32" stroke="white" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <ul>
+                  <li>About</li>
+                  <li>Features</li>
+                  <li>Pricing</li>
+                  <li>Help</li>
+                  <li>Contact</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <ul class="desktop-menu">
+            <li class="menu-item"><a href="/">About</a></li>
+            <li class="menu-item"><a href="/">Features</a></li>
+            <li class="menu-item"><a href="/">Pricing</a></li>
+            <li class="menu-item"><a href="/">Help</a></li>
+            <li class="menu-item"><a href="/">Contact</a></li>
+            <li>
+              <button class="login-btn">Login</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <section class="get-start">
+        <img src="./images/image-banner.png" class="top-image" />
+        <div class="description">
+          <h2>Prisense, know your competitors, maximize gains!</h2>
+          <p>
+            Provides you with detailed competitor price insights, highlights
+            gaps and provides timely alerts
+          </p>
+          <button class="button">Get Started</button>
+        </div>
+      </section>
+      <section class="about">
+        <h3 id="about">About</h3>
+        <p>
+          Pricing poses a daily challenge in today's retail market,
+          particularly for high-profit items with volatile price fluctuations.
+          However, conducting manual price surveys on a daily basis is a
+          laborious task for business owners. To solve this pain point, one
+          solution is to implement automated price monitoring. Therefore,
+          Prisense offers detailed competitor price insights, highlights gaps
+          and provides timely alerts. Use this valuable information to
+          fine-tune your pricing strategy and gain a competitive edge,
+          maximizing your profits through business intelligence.
+        </p>
+      </section>
+      <section class="features">
+        <h3>App Features</h3>
+        <div class="container app-features">
+          <article>
+            <img src="./images/c3.png" alt="" />
+            <div class=" app-info">
+              <h4>Timely Alerts</h4>
+              <p>
+                You'll receive alerts when competitors' prices change, ensuring that you never miss out any value
+                competition.
+              </p>
+            </div>
+          </article>
+          <article>
+            <img src="./images/c2.png" alt="" />
+            <div class="app-info">
+              <h4>Price Monitoring</h4>
+              <p>
+                With business intelligence, you can examine and compare prices from all rivals, use this important data
+                to precisely adapt your pricing strategy and acquire a competitive advantage, and maximise your
+                earnings.
+              </p>
+            </div>
+          </article>
+          <article>
+            <img src="./images/c1.png" alt="" />
+            <div class="app-info">
+              <h4>Import Inventory</h4>
+              <p>
+                It is convenient to use Pricesense since it enables you to import your inventory simply uploading a
+                file.
+                Pricesense will then automatically scan all of the items from the file rather than requiring you to
+                manually enter them.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="test-comment">
+        <h3>Testimonials</h3>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>
+                Because of shop management, I don't have time to examine price
+                adjustments, but Pricesense's alerts let me effortlessly alter
+                pricing and keep me one step ahead of my competition. I like how
+                it has helped me understand my competitors.
+              </p>
+              <p class="author">- John Keats</p>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                Because of shop management, I don't have time to examine price
+                adjustments, but Pricesense's alerts let me effortlessly alter
+                pricing and keep me one step ahead of my competition. I like how
+                it has helped me understand my competitors.
+              </p>
+              <p class="author">- Ernest Hemingway</p>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                Because of shop management, I don't have time to examine price
+                adjustments, but Pricesense's alerts let me effortlessly alter
+                pricing and keep me one step ahead of my competition. I like how
+                it has helped me understand my competitors.
+              </p>
+              <p class="author">- Thomas A. Edison</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="team">
+        <h3>Our team</h3>
+        <div class="team-members">
+          <div class="team-member">
+            <img src="./images/IMG_0784.jpg" alt="" />
+            <div class="meta-data">
+              <div class="pm">
+                <h4 class="name">Anshul Gupta</h4>
+              </div>
+              <div class="pm"></div>
+              <h5 class="describe">Front-end Developer</h5>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="./images/IMG_0788.jpg" alt="" />
+            <div class="meta-data">
+              <div class="pm">
+                <h4 class="name">Sean Ji</h4>
+              </div>
+              <h5 class="describe">Full Stack developer</h5>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="./images/IMG_0787.jpg" alt="" />
+            <div class="meta-data">
+              <div class="pm">
+                <h4 class="name">Hmoon Aung</h4>
+              </div>
+              <div class="pm">
+                <h5 class="describe">Lead Developer</h5>
+              </div>
+              <h5>Full Stack Developer</h5>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="./images/IMG_0789.jpg" alt="" />
+            <div class="meta-data">
+              <h4 class="name">Binazir Farokhi</h4>
+              <h5 class="describe">Project Manager</h5>
+              <h5 class="describe">Front-end Developer</h5>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="./images/IMG_0786.jpg" alt="" />
+            <div class="meta-data">
+              <div class="pm">
+                <h4 class="name">Celia Chang</h4>
+              </div>
+              <div class="pm">
+                <h5 class="describe">Lead Desinger</h5>
+              </div>
+              <h5>Ux/UI designer</h5>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="./images/IMG_0783.jpg" alt="" />
+            <div class="meta-data">
+              <h4 class="name">Snehjot Saini</h4>
+              <h5>Ux/UI designer</h5>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="./images/IMG_0790.jpg" alt="" />
+            <div class="meta-data">
+              <div class="pm">
+                <h4 class="name">Neo Yu</h4>
+              </div>
+              <h5>Ux/UI designer</h5>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="./images/IMG_0785.jpg" alt="" />
+            <div class="meta-data">
+              <h4 class="name">Harpreet Kaur</h4>
+              <h5>Ux/UI designer</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <h3>FAQs</h3>
+        <div class="faq-form">
+          <div id="price" class="form-input">
+            <p>What is Princesense?</p>
+            <i class="fas fa-plus" id="priceButton" aria-hidden="true" title="menu"></i>
+          </div>
+          <p class="hide faq-text">
+            Pricesense is the price comarison that gives you detailed
+            comparison that gives you detailed compatitor price insights,
+            highlights gaps and provides timely alerts.
+          </p>
+          <div id="why" class="form-input">
+            <p>Why is Pricesense?</p>
+            <i class="fas fa-plus" id="whyButton" aria-hidden="true" title="menu"></i>
+          </div>
+          <p class="hide faq-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit sint alias nihil error impedit, velit at quas
+            ratione distinctio commodi. Doloribus nesciunt ipsam unde et,
+            aliquam nulla aut asperiores tempore provident quos ratione eaque
+            nisi deleniti sapiente nihil saepe, harum delectus maiores fugiat
+            repellendus voluptate quis molestiae? Esse exercitationem
+            recusandae quaerat illum consequatur error laboriosam nostrum
+            nobis architecto! Eos voluptatem at veniam cum vel?
+          </p>
+          <div id="how" class="form-input">
+            <p>How to use Pricesense?</p>
+            <i class="fas fa-plus" id="howButton" aria-hidden="true" title="menu"></i>
+          </div>
+          <p class="hide faq-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+            numquam beatae aliquid aut tempora quam repudiandae distinctio
+            quas earum mollitia molestiae suscipit veritatis alias laudantium
+            voluptatibus a ea, hic blanditiis accusamus. Explicabo voluptatem
+            eos officia!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h4>Increase the value of your prices right away!</h4>
+      <div class="footer-wrapper">
+        <p>
+          Want to stay ahead of your peers? Sign up today to monitor prices
+          and provide valuable insights to enhance your pricing strategy.
+        </p>
+        <form>
+          <input placeholder="Enter Your Email" name="demo-email" id="demoEmail" />
+          <button>Get a Demo</button>
+        </form>
+      </div>
+      <section class="rights">
+        copyright @2023 Pricesense | All Rights Reserved
+      </section>
+    </footer>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

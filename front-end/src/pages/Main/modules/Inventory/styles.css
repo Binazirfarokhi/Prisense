@@ -1,0 +1,40 @@
+.title {
+    font-weight: bold;
+    font-size: 200%;
+}
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+.container {
+    float: left;
+}
+.card {
+    background-color: #dae4e6;
+    border-radius: 0%;
+    border: none;
+    margin-top: 24px;
+    padding: 36px 36px;
+    font-weight: 500;
+}
+.inventory-main {
+    max-width: 1600px;
+    padding: 24px 24px 24px 24px;
+}
+.upload-icon {
+    background-color: black;
+    padding: 16px 16px 16px 16px;
+    border-radius: 50%;
+    display: inline-block;
+}.btn-max {
+    width: 150px;
+}
+.disabled > td{
+    color: gray;
+}
+.back {
+     font-weight: bold;
+     cursor: pointer;
+}
